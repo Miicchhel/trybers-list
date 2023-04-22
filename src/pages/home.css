@@ -1,0 +1,11 @@
+.container_home {
+  background-color: #FFA500;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+}
+
+.container_home p {
+  color: #363537;
+  font-weight: 700;
+}

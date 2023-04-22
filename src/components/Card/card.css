@@ -1,0 +1,73 @@
+.card {
+  background-color: #5c5b5e;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  height: 230px;
+  width: 160px;
+}
+
+.card p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card button {
+  background-color: #6278f7;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 8px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+}
+
+.card div:last-child {
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.container_btn {
+  margin-top: 15px;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.container_btn a{
+  color:white
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 230px;
+    width: 160px;
+  }
+
+  .card div:nth-child(2) {
+    margin-right: 24px;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  margin-bottom: 10px;
+}
+
+.div2 h3 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: 2fr, 3fr; */
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+  }
+  
+  .div1 { 
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .div2 {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    overflow: auto;
+    grid-area: 1 / 2 / 2 / 4;
+  }
+}
