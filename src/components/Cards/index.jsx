@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../Card";
 import './cards.css'
-import { getTrybers } from "../../services/requests";
 
 // const mock = [
 //   {
