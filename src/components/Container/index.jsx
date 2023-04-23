@@ -10,7 +10,7 @@ function Container({ children }) {
         <Home />
       </div>
       <div className="div2"> 
-        <h3>Trybes cadastrados</h3>
+        <h3>Trybers cadastrados</h3>
         <Cards />
       </div>
     </section>

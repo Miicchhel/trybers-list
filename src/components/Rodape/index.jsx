@@ -5,9 +5,9 @@ import './rodape.css'
 const Rodape = () => {
   return(
     <div className="rodape">
-      <p>
+      <span>
         Desenvolvipo por <strong>Michel Ferreira</strong>
-      </p>
+      </span>
 
       <div className="social_media">
         <a href="https://github.com/Miicchhel" target="_blanck"><FaGithub /></a>

@@ -13,11 +13,14 @@
 
 .card p {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 1.5;
   margin: 0;
   text-align: center;
+}
+
+.card p:first-child {
+  font-size: 18px;
 }
 
 .card img {
@@ -41,13 +44,10 @@
   text-transform: uppercase;
 }
 
-.card div:last-child {
+.card span:last-child {
   color: #9b9b9b;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
-  margin-top: 16px;
-  text-align: center;
 }
 
 .container_btn {
@@ -59,15 +59,4 @@
 
 .container_btn a{
   color:white
-}
-
-@media (min-width: 768px) {
-  .card {
-    height: 230px;
-    width: 160px;
-  }
-
-  .card div:nth-child(2) {
-    margin-right: 24px;
-  }
 }

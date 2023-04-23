@@ -18,7 +18,7 @@ function Home() {
 
       {
         !cadastrar && (<>
-          <h1>Cadastre-se já na API Trybes</h1>
+          <h1>Cadastre-se já na API Trybers</h1>
           <p>e deixe seus amigos trabalharem com você!</p>
         </>)
       }
