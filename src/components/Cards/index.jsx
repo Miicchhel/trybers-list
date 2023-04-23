@@ -278,20 +278,9 @@ import { getTrybers } from "../../services/requests";
 //     "github": "https://github.com/thiagoccs"
 //   }
 // ]
-function Cards() {
+function Cards({ data, fetchData }) {
 
-  const [data, setData] = useState([]);
   const [showData, setShowData] = useState([]);
-
-  const fetchData = async () => {
-    const url = '/trybers';
-    try {
-      const response = await getTrybers(url);
-      setData(response)
-    } catch (error) {
-      console.error(error);
-    }
-  }
 
   const atualizandoShowData = () => {
     let dataTest = data.slice(0, data.length-1)
@@ -301,12 +290,10 @@ function Cards() {
   }
 
   useEffect(() => {
-    console.log('primeiro');
     fetchData()
   },[]);
 
   useEffect(() => {
-    console.log('segundo');
     atualizandoShowData()
   },[data]);
   

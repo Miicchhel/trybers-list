@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { postTrybers } from "../../services/requests";
 import './formulario.css';
 
-const Formulario = () => {
+const Formulario = ({fetchData}) => {
   const [turma, setTurma] = useState('');
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
@@ -39,6 +39,8 @@ const Formulario = () => {
     setEmail('');
     setLinkedin('');
     setGithub('');
+
+    fetchData()
   }
 
   return (

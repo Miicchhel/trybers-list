@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Formulario from "../components/Formulario";
 import './home.css'
 
-function Home() {
+function Home({ fetchData }) {
   const [cadastrar, setCadastrar] = useState(false);
   const [teste, setTest] = useState('Cadastrar')
 
@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className="container_home">
-      { cadastrar && <Formulario /> }
+      { cadastrar && <Formulario fetchData = { fetchData } /> }
 
       {
         !cadastrar && (<>
