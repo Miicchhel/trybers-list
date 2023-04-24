@@ -52,6 +52,7 @@ const Formulario = ({fetchData}) => {
           id="turma"
           name="turma"
           value={turma}
+          placeholder="99"
           onChange={handleTurmaChange}
           required
         />
@@ -64,6 +65,7 @@ const Formulario = ({fetchData}) => {
           id="nome"
           name="nome"
           value={nome}
+          placeholder="Mariana Sobrenome"
           onChange={handleNomeChange}
           required
         />
@@ -89,6 +91,7 @@ const Formulario = ({fetchData}) => {
           id="linkedin"
           name="linkedin"
           value={linkedin}
+          placeholder="https://www.linkedin.com/in/mariana/"
           onChange={handleLinkedinChange}
           required
         />
@@ -100,6 +103,7 @@ const Formulario = ({fetchData}) => {
         id="github"
         name="github"
         value={github}
+        placeholder="https://github.com/mariana"
         onChange={handleGithubChange}
         required
       />
