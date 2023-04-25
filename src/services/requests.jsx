@@ -12,7 +12,7 @@ export const getTrybers = async (endpoint) => {
 export const postTrybers = async (endpoint, body) => {
   const config = {
     headers: {
-      Authorization: process.env.ADMIN_ACESS,
+      Authorization: 'fJtnw*ZazBf&si808e0sb8&k67A5Beuy11nzGI5l1fWNEt%&3j',
     }
   };
   const { data } = await api.post(endpoint, body, config);
