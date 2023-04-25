@@ -13,7 +13,6 @@ function Container() {
     const url = '/trybers';
     try {
       const response = await getTrybers(url);
-      console.log(response);
       setData(response)
     } catch (error) {
       console.error(error);
