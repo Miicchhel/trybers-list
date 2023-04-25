@@ -10,12 +10,12 @@ export const getTrybers = async (endpoint) => {
 };
 
 export const postTrybers = async (endpoint, body) => {
-  const config = {
-    headers: {
-      Authorization: 'fJtnw*ZazBf&si808e0sb8&k67A5Beuy11nzGI5l1fWNEt%&3j',
-    }
-  };
-  const { data } = await api.post(endpoint, body, config);
+  // const config = {
+  //   headers: {
+  //     Authorization: 'fJtnw*ZazBf&si808e0sb',
+  //   }
+  // };
+  const { data } = await api.post(endpoint, body);
   return data;
 };
 
